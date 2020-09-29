@@ -1,0 +1,41 @@
+{
+    "name": "thoth-pharaoh/logger",
+    "description": "Log紀錄-收集器",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "nick",
+            "email": "nick@ifalo.com.tw"
+        }
+    ],
+    "require": {
+        "php": ">=7.3",
+        "ext-json": "*",
+        "illuminate/support": "^8.6"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^6.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Pharaoh\\Logger\\": "src/"
+        }
+    },
+    "aut
+    oload-dev": {
+        "psr-4": {
+            "Pharaoh\\Logger\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Pharaoh\\Logger\\LoggerProvider"
+            ],
+            "aliases": {
+                "Logger": "Pharaoh\\Logger\\Facades\\Logger"
+            }
+        }
+    }
+}
