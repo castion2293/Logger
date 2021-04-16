@@ -3,7 +3,7 @@
 namespace Pharaoh\Logger\controllers;
 
 use Illuminate\Support\Facades\Crypt;
-use Rap2hpoutre\LaravelLogViewer\LaravelLogViewer;
+use Pharaoh\Logger\LaravelLogViewer;
 
 if (class_exists("\\Illuminate\\Routing\\Controller")) {
     class BaseController extends \Illuminate\Routing\Controller
@@ -81,7 +81,7 @@ class LogViewController extends BaseController
         if (is_array($data['logs']) && count($data['logs']) > 0) {
             $firstLog = reset($data['logs']);
             if (!$firstLog['context'] && !$firstLog['level']) {
-                $data['standardFormat'] = false;
+                $data['standardFormat'] = true;
             }
         }
 
