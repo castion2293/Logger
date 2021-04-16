@@ -17,5 +17,7 @@ class LoggerServiceProvider extends ServiceProvider
 
         $loader = AliasLoader::getInstance();
         $loader->alias('logger', 'Pharaoh\Logger\Logger');
+
+        $this->loadViewsFrom(__DIR__ . '/views', 'pharaoh_logger');
     }
 }
