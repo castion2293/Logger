@@ -3,3 +3,5 @@
 /node_modules
 .php_cs.cache
 .DS_Store
+/tests/storage/
+.phpunit.result.cache

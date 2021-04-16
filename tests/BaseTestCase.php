@@ -1,5 +1,7 @@
 <?php
 
+namespace Pharaoh\Logger\Tests;
+
 use Orchestra\Testbench\TestCase;
 use Symfony\Component\Console\Output\ConsoleOutput;
 use Faker\Factory as FakerFactory;
@@ -65,7 +67,7 @@ class BaseTestCase extends TestCase
      */
     protected function getApplicationTimezone($app)
     {
-        return 'UTC';
+        return 'Asia/Taipei';
     }
 
     /**
@@ -115,13 +117,13 @@ class BaseTestCase extends TestCase
         $app['config']->set('database.connections.testing', [
             'driver' => env('TEST_DB_DRIVER', 'mysql'),
             'read' => [
-                'host' => env('TEST_DB_HOST_READ', 'localhost'),
+                'host' => env('TEST_DB_HOST_READ', '127.0.0.1'),
             ],
             'write' => [
-                'host' => env('TEST_DB_HOST_WRITE', 'localhost'),
+                'host' => env('TEST_DB_HOST_WRITE', '127.0.0.1'),
             ],
             'host' => env('TEST_DB_HOST', 'localhost'),
-            'database' => env('TEST_DB_DATABASE', 'operation'),
+            'database' => env('TEST_DB_DATABASE', 'testing'),
             'port' => env('TEST_DB_PORT', 3306),
             'username' => env('TEST_DB_USERNAME', 'root'),
             'password' => env('TEST_DB_PASSWORD', 'root'),
@@ -167,6 +169,18 @@ class BaseTestCase extends TestCase
         if (file_exists(__DIR__ . '/../database/factories')) {
             $this->withFactories(__DIR__ . '/../database/factories');
         }
+
+        // 改變 storage_path 路徑至 /tests/storage/
+        app()->bind('path.storage', function () {
+            return __DIR__ . '/storage';
+        });
+
+        // 完成測試後 清除所建立的LOG檔
+        $this->beforeApplicationDestroyed(function () {
+            if (is_dir(storage_path('logs'))) {
+                shell_exec('rm -rf ' . storage_path('logs/'));
+            }
+        });
     }
 
     /**
