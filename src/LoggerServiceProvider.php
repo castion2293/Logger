@@ -23,7 +23,8 @@ class LoggerServiceProvider extends ServiceProvider
         $this->publishes(
             [
                 __DIR__ . '/config/logger.php' => config_path('logger.php')
-            ]
+            ],
+            'logger-config'
         );
     }
 
