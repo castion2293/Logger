@@ -38,10 +38,10 @@ class DestroyLogCommand extends Command
      */
     public function handle()
     {
-        $destroyDays = $this->option('destroy_days') ?? config('logger.destroyDays');
+        $destroyDays = $this->option('destroy_days') ?? config('logger.destroy_days');
         $destroyDate = now()->subDays(intval($destroyDays))->toDateString();
 
-        foreach (config('logger.logFolder') as $folder) {
+        foreach (config('logger.log_folders') as $folder) {
             Logger::destroy($folder, $destroyDate);
             $this->line('Delete ' . $destroyDate . ' ' . $folder . ' log is done. ');
         }

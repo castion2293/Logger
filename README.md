@@ -40,7 +40,7 @@ RouteServiceProvider
  }
 ```
 至路由 ```http://domain/sport-logs/{folder}``` 即可看到Log畫面
->  folder為Log資料夾名稱 可以至 config/logger.php 中 logFolder 欄位添加
+>  folder為Log資料夾名稱 可以至 config/logger.php 中 log_folders 欄位添加
 
 ## 使用方法
 
@@ -89,4 +89,4 @@ php artisan destroy:logs {--destroy_days=}
 | ------------|:----------------------- | :------| :------|
 | --destroy_days | 保留幾天內的Log紀錄 | int | 30 |
 
->  destroy_days 不給就是以 config.logger.php 中 destroyDays 欄位為主
+>  destroy_days 不給就是以 config.logger.php 中 destroy_days 欄位為主

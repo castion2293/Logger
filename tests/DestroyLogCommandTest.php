@@ -39,9 +39,9 @@ class DestroyLogCommandTest extends BaseTestCase
         $this->travelBack();
         Logger::info($this->folder, $this->message);
 
-        $destroyDate = now()->subDays(config('logger.destroyDays'))->toDateString();
+        $destroyDate = now()->subDays(config('logger.destroy_days'))->toDateString();
 
-        config()->set(['logger.logFolder' => [$this->folder]]);
+        config()->set(['logger.log_folders' => [$this->folder]]);
 
         // Act
         $this->artisan('destroy:logs')
