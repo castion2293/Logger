@@ -2,7 +2,6 @@
 
 namespace Pharaoh\Logger\commands;
 
-use Carbon\Carbon;
 use Illuminate\Console\Command;
 use Pharaoh\Logger\facades\Logger;
 
@@ -40,7 +39,7 @@ class DestroyLogCommand extends Command
     public function handle()
     {
         $destroyDays = $this->option('destroy_days') ?? config('logger.destroyDays');
-        $destroyDate = Carbon::now()->subDays(intval($destroyDays))->toDateString();
+        $destroyDate = now()->subDays(intval($destroyDays))->toDateString();
 
         foreach (config('logger.logFolder') as $folder) {
             Logger::destroy($folder, $destroyDate);

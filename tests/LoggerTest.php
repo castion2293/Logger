@@ -157,4 +157,23 @@ class LoggerTest extends BaseTestCase
         $this->assertStringContainsString("{$this->folder}.EMERGENCY: ", $content);
         $this->assertStringContainsString(json_encode($this->message), $content);
     }
+
+    public function testDestroyLogs()
+    {
+        // Arrange
+        $this->travel(-4)->months();
+        Logger::info($this->folder, $this->message);
+
+        $this->travelBack();
+        Logger::info($this->folder, $this->message);
+
+        // Act
+        Logger::destroy($this->folder, now()->subMonths(3)->toDateString());
+
+        // Assert
+        $file = glob(storage_path("/logs/{$this->folder}/*"));
+        $this->assertCount(1, $file);
+        $folderName = Arr::first($file);
+        $this->assertStringEndsNotWith($folderName, now()->toDateString());
+    }
 }

@@ -38,7 +38,7 @@ class Logger
         list($folder, $data) = $arguments;
 
         $logger = new \Monolog\Logger($folder);
-        $filename = storage_path('logs/' . $folder . '/' . date('Y-m-d') . '/' . date('H') . '.log');
+        $filename = storage_path('logs/' . $folder . '/' . now()->toDateString() . '/' . date('H') . '.log');
         $streamHandler = new StreamHandler($filename, Arr::get($this->levels, $method));
         $streamHandler->setFormatter(new LineFormatter(null, 'Y-m-d H:i:s'));
         $logger->pushHandler($streamHandler);
