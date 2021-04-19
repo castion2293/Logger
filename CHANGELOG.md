@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.6](https://github.com/castion2293/logger/compare/v1.1.5...v1.1.6) (2021-04-19)
+
+
+### Bug Fixes
+
+* 修改config位置([@nick](https://github.com/nick)) ([00ca2af](https://github.com/castion2293/logger/commit/00ca2af74f559d0d0178a8f2a6880ee8765a663e))
+
 ### [1.1.5](https://github.com/castion2293/logger/compare/v1.1.4...v1.1.5) (2021-04-19)
 
 
