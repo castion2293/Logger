@@ -1,9 +1,9 @@
 <?php
 
-namespace Pharaoh\Logger\commands;
+namespace Pharaoh\Logger\Commands;
 
 use Illuminate\Console\Command;
-use Pharaoh\Logger\facades\Logger;
+use Pharaoh\Logger\Facades\Logger;
 
 class DestroyLogCommand extends Command
 {

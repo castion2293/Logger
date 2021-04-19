@@ -1,6 +1,6 @@
 <?php
 
-namespace Pharaoh\Logger\facades;
+namespace Pharaoh\Logger\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

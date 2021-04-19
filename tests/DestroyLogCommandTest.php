@@ -4,7 +4,7 @@ namespace Pharaoh\Logger\Tests;
 
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Artisan;
-use Pharaoh\Logger\facades\Logger;
+use Pharaoh\Logger\Facades\Logger;
 
 class DestroyLogCommandTest extends BaseTestCase
 {

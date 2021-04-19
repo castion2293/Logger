@@ -1,6 +1,6 @@
 <?php
 
-namespace Pharaoh\Logger\controllers;
+namespace Pharaoh\Logger\Controllers;
 
 use Illuminate\Support\Facades\Crypt;
 use Pharaoh\Logger\LaravelLogViewer;

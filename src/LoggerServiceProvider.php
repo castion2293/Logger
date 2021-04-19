@@ -4,7 +4,7 @@ namespace Pharaoh\Logger;
 
 use Illuminate\Foundation\AliasLoader;
 use Illuminate\Support\ServiceProvider;
-use Pharaoh\Logger\commands\DestroyLogCommand;
+use Pharaoh\Logger\Commands\DestroyLogCommand;
 
 class LoggerServiceProvider extends ServiceProvider
 {
@@ -12,7 +12,7 @@ class LoggerServiceProvider extends ServiceProvider
     {
         $this->mergeConfigFrom(__DIR__ . '/../config/logger.php', 'logger');
 
-        $this->loadViewsFrom(__DIR__ . '/views', 'pharaoh_logger');
+        $this->loadViewsFrom(__DIR__ . '/Views', 'pharaoh_logger');
 
         $this->commands(
             [

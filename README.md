@@ -48,7 +48,7 @@ RouteServiceProvider
 
 先引入門面
 ```bash
-use Pharaoh\Logger\facades\Logger;
+use Pharaoh\Logger\Facades\Logger;
 ```
 
 建立Log:
