@@ -5,7 +5,7 @@ namespace Pharaoh\Logger\facades;
 use Illuminate\Support\Facades\Facade;
 
 /**
- * Class OperationRecord
+ * Class Logger
  *
  * @see \Pharaoh\Logger\Logger
  */
