@@ -10,7 +10,7 @@ class LoggerServiceProvider extends ServiceProvider
 {
     public function boot()
     {
-        $this->mergeConfigFrom(__DIR__ . '/config/logger.php', 'logger');
+        $this->mergeConfigFrom(__DIR__ . '/../config/logger.php', 'logger');
 
         $this->loadViewsFrom(__DIR__ . '/views', 'pharaoh_logger');
 
@@ -22,7 +22,7 @@ class LoggerServiceProvider extends ServiceProvider
 
         $this->publishes(
             [
-                __DIR__ . '/config/logger.php' => config_path('logger.php')
+                __DIR__ . '/../config/logger.php' => config_path('logger.php')
             ],
             'logger-config'
         );
