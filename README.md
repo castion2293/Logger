@@ -26,7 +26,7 @@ composer require thoth-pharaoh/logger
 php artisan vendor:publish --tag=logger-config --force
 ```
 
-註冊 sport-logs/{folder} 路由
+註冊 logs/{folder} 路由
 
 RouteServiceProvider
 ```bash

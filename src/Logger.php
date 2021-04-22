@@ -50,7 +50,7 @@ class Logger
      */
     public function routes()
     {
-        Route::get('sport-logs/{folder}', 'Pharaoh\Logger\Controllers\LogViewController@index');
+        Route::get('logs/{folder}', 'Pharaoh\Logger\Controllers\LogViewController@index');
     }
 
     /**
