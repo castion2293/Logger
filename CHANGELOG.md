@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.8](https://github.com/castion2293/logger/compare/v1.1.7...v1.1.8) (2021-04-22)
+
+
+### Bug Fixes
+
+* 修改向下支援php7.3([@nick](https://github.com/nick)) ([4631d65](https://github.com/castion2293/logger/commit/4631d65b5e5adc3c45b86fc8bd9149dcccf17040))
+
 ### [1.1.7](https://github.com/castion2293/logger/compare/v1.1.6...v1.1.7) (2021-04-19)
 
 
