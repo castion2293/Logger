@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.10](https://github.com/castion2293/logger/compare/v1.1.9...v1.1.10) (2021-04-23)
+
+
+### Bug Fixes
+
+* 修改composer.json([@nick](https://github.com/nick)) ([3ad38e2](https://github.com/castion2293/logger/commit/3ad38e22ec9acf9a3d0f7646699e6595b85d3f7d))
+
 ### [1.1.9](https://github.com/castion2293/logger/compare/v1.1.8...v1.1.9) (2021-04-22)
 
 

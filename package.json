@@ -1,6 +1,6 @@
 {
   "name": "logger",
-  "version": "1.1.9",
+  "version": "1.1.10",
   "description": "Log紀錄-收集器",
   "main": "index.js",
   "directories": {
