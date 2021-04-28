@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.11](https://github.com/castion2293/logger/compare/v1.1.10...v1.1.11) (2021-04-28)
+
+
+### Bug Fixes
+
+* 修改request()->route() 增加optional()判斷避免null([@nick](https://github.com/nick)) ([05c5c5d](https://github.com/castion2293/logger/commit/05c5c5d7fe16d5218ca9c8eed39caf7e8baf7a22))
+
 ### [1.1.10](https://github.com/castion2293/logger/compare/v1.1.9...v1.1.10) (2021-04-23)
 
 
