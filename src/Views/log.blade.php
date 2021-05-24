@@ -169,7 +169,7 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col sidebar mb-3">
-            <h1><i class="fa fa-calendar" aria-hidden="true"></i> Laravel Log Viewer</h1>
+            <h1><a href="{{ url('logs') }}"><i class="fa fa-calendar" aria-hidden="true"></i></a> Laravel Log Viewer</h1>
             <p class="text-muted"><i>by Rap2h</i></p>
 
             <div class="custom-control custom-switch" style="padding-bottom:20px;">
