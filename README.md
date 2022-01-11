@@ -39,7 +39,7 @@ RouteServiceProvider
     });
  }
 ```
-至路由 ```http://domain/sport-logs/{folder}``` 即可看到Log畫面
+至路由 ```http://domain/logs/{folder}``` 即可看到Log畫面
 >  folder為Log資料夾名稱 可以至 config/logger.php 中 log_folders 欄位添加
 
 ## 使用方法
