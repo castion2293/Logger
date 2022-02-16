@@ -15,6 +15,13 @@ logs
 
 然後搭配 ap2hpoutre/laravel-log-viewer 套件，可以顯示Log視窗
 
+## 版本匹配
+
+| Laravel          | package               |
+| ----------------- |:----------------------- |
+| 8.X       | 1.X   |
+| 9.X       | 2.X   |
+
 ## 安裝
 你可以使用 composer 做安裝
 ```bash

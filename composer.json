@@ -12,11 +12,11 @@
     "require": {
         "php": "^8.0",
         "ext-json": "*",
-        "illuminate/support": "^8.6",
-        "rap2hpoutre/laravel-log-viewer": "^1.7"
+        "illuminate/support": "^9.0",
+        "rap2hpoutre/laravel-log-viewer": "^2.0"
     },
     "require-dev": {
-        "orchestra/testbench": "^6.2"
+        "orchestra/testbench": "^7.0"
     },
     "autoload": {
         "psr-4": {

@@ -25,7 +25,7 @@ class LaravelLogViewer
     /**
      * Why? Uh... Sorry
      */
-    const MAX_FILE_SIZE = 52428800;
+    public const MAX_FILE_SIZE = 52428800;
 
     /**
      * @var Level level
