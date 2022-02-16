@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.0.0](https://github.com/castion2293/logger/compare/v1.2.0...v2.0.0) (2022-02-16)
+
+
+### Features
+
+* 升級至laravel9([@nick](https://github.com/nick)) ([6e5ada6](https://github.com/castion2293/logger/commit/6e5ada6a660afa47abf664ea9ffed277da6902c4))
+
 ## [1.2.0](https://github.com/castion2293/logger/compare/v1.1.11...v1.2.0) (2021-05-24)
 
 
