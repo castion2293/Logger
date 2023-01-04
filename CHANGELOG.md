@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.0.1](https://github.com/castion2293/logger/compare/v2.0.0...v2.0.1) (2023-01-04)
+
+
+### Bug Fixes
+
+* logView 增加密碼保護([@nick](https://github.com/nick)) ([f1daae8](https://github.com/castion2293/logger/commit/f1daae83a39c6e695d35d3d1eeeb6453449d8e93))
+
 ## [2.0.0](https://github.com/castion2293/logger/compare/v1.2.0...v2.0.0) (2022-02-16)
 
 
