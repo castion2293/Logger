@@ -41,4 +41,15 @@
     </div>
 </div>
 </body>
+
+<script language="JavaScript">
+    var password;
+    var secret="{{ config('logger.log_view_password') }}";
+
+    while (password != secret) {
+        password = prompt('Enter Password:','');
+    }
+
+    alert('Correct Password! Click OK to Enter!');
+</script>
 </html>

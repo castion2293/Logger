@@ -6,4 +6,7 @@ return [
 
     // Log Folders 設置
     'log_folders' => [],
+
+    // Log View Password
+    'log_view_password' => '123456',
 ];
