@@ -42,7 +42,7 @@ class Logger
         $streamHandler = new StreamHandler($filename, Arr::get($this->levels, $method));
         $streamHandler->setFormatter(new LineFormatter(null, 'Y-m-d H:i:s'));
         $logger->pushHandler($streamHandler);
-        $logger->$method(json_encode($data));
+        $logger->$method(json_encode($data, JSON_UNESCAPED_UNICODE));
     }
 
     /**
